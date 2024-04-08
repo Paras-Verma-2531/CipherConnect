@@ -9,13 +9,8 @@ global key_length
 
 prime = 0xFFFFFFFFFFFFFFFFC90FDAA2216
 generator = 2
-key_length = 100
-
-'''
---------------------------------------------------------
-********* DIFFIE HELLMAN KEY EXCHANGE PROTOCOL *********
---------------------------------------------------------
-'''
+key_length = 600
+# implementation of hellman-algorithm
 def generate_private_key(length):
     _rand = 0
     _bytes = length // 8 + 8
