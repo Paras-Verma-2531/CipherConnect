@@ -29,7 +29,7 @@ def recievefilepage():
     webbrowser.open_new(r"http://127.0.0.1:5000/file-directory")
 
 def opengithub(event):
-    webbrowser.open_new(r"https://github.com/Paras-Verma-2531/CipherConnect")
+    webbrowser.open_new(r"https://github.com/parthendo/thrain")
 
 def fileToEncrptyEntryUpdate(filename):
     inputEncFileEntry.delete(0, tk.END)
@@ -172,7 +172,7 @@ def main():
     intro = ttk.Label(Aboutus, text="\nCipherConnect - A Fortified Data Exchange System", style='Bold.TLabel')
     intro.grid(row=0)
 
-    text1 = ttk.Label(Aboutus, text="\nCipherConnect enables its users to securely\ntransfer files in 'txt' format without\n"
+    text1 = ttk.Label(Aboutus, text="\nThrain enables its users to securely\ntransfer files in 'txt' format without\n"
                                 "any third party eavesdropping\n")
     text1.grid(row=1)
 

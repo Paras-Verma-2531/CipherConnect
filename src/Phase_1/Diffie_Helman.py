@@ -11,12 +11,7 @@ prime = 0xFFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD129024E088A67CC74020BBE
 #GLOBAL PRIMITIVE ROOT
 generator = 2
 key_length = 100
-
-'''
---------------------------------------------------------
-********* DIFFIE HELLMAN KEY EXCHANGE PROTOCOL *********
---------------------------------------------------------
-'''
+# Private Key generator method
 def generate_private_key(length):
     _rand = 0
     _bytes = length // 8 + 8
@@ -30,7 +25,7 @@ def generate_private_key(length):
         _rand = int(hex_key, 16)
     return _rand
 
-
+# Public key generator method
 #Public key = primitive root ^ private key % prime
 def generate_public_key(private_key):
 	public_key = pow(generator, private_key, prime)
